@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let total = 0;
+
+		while (true) {
+			let user_number = +prompt("Введите число");
+  			if (!user_number) {
+  				break; // (*)
+			}
+  			total += user_number;
+		}
+		alert( 'Сумма: ' + total )
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		const ADMIN_PASSWORD = 'jqueryismyjam';
+		let message;
+		message = prompt('Веддіть пароль')
+		
+		if (message == null){
+			message = 'Користувач відмінив';
+			console.log(message)
+		}else if (message == ADMIN_PASSWORD){
+			message = 'Ви увійшли';
+			console.log(message)
+		}else{
+			message = 'Невірний пароль. Доступ заборонено'
+			console.log(message)
+		}
+	</script>
+</body>
+</html>
