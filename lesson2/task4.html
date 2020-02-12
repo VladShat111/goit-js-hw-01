@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		const formatString = function(string) {
+  			if (string.length <= 40){
+  				console.log(string)
+  			}else if (string.length > 40){
+  			  	string = string.slice(0, 41)
+  			  	console.log(`${string}...`)
+  			}
+  		};
+  		formatString('Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.')
+	</script>
+</body>
+</html>

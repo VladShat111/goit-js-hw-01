@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
+		
+		const isLoginValid = function(login) {
+			if (login.length >= 4 && login.length <= 16){
+				return true;
+			}else{
+				return false;
+			}	
+		};
+
+		const isLoginUnique = function(allLogins, login) {
+			if(allLogins.indexOf(login) === -1){
+				return true;
+			}else{
+				return false;
+			}
+		};
+
+		const addLogin = function(allLoginss, login) {
+			if (isLoginValid(login) === false){
+				alert('Ошибка! Логин должен быть от 4 до 16 символов')
+			}else{
+				if(isLoginUnique(allLoginss, login) === true){
+					allLoginss.push(login)
+					alert('Логин успешно добавлен!');
+				}else{
+					alert('Такой логин уже используется!');
+				}
+			}
+		};
+		addLogin(logins, 'Ajax')
+
+	</script>
+</body>
+</html>
